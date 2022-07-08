@@ -9,9 +9,10 @@
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>spring-security-authentication</module>
+    <module>spring-security-authentication-scenario-3</module>
     <module>spring-security-authentication-scenario-4</module>
     <module>spring-security-authentication-scenario-5</module>
+    <module>spring-security-authorization</module>
   </modules>
 
   <name>parent-project</name>
