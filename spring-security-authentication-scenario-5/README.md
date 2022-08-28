@@ -15,10 +15,13 @@ This project does not use any database, so you do not need to set up anything sp
 
 **Method 2:** Run mvn `spring-boot:run` in your terminal.
 
+### Why are all classes in one file?
+I think it is easier to follow the flow when all of the classes are in the same file. It is just educational purpose, not a best practice to do.
 
 ### Endpoints:
 There are two endpoints available in this project. One for fetching authentication token and one for accessing protected endpoint.
-You will need to use the following cURL to fetch the authentication token.
+
+**Step 1:** You will need to use the following cURL to fetch the authentication token.
 ```console
 curl --location --request POST 'http://localhost:8080/login' \
 --header 'Content-Type: application/json' \
@@ -28,14 +31,12 @@ curl --location --request POST 'http://localhost:8080/login' \
 }'
 ```
 
-
-
 This request will give you a JWT token that will be used for authentication. An example of the response is below.
 ```console
 eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJ0aW4iLCJpc3MiOiJiYWNrZW5kc3RvcnkuY29tIiwiaWF0IjoxNjYxNjcxNTM2LCJleHAiOjE2NjE2NzE1OTZ9.BKRX9eGNzfbqNJ6yNgZjgC6x2Y7aVcZyWM48bsxB9aE
 ```
 
-Then, you can hit `/hello` endpoint with the token you got from the cURL request above.
+**Step 2:** Then, you can hit `/hello` endpoint with the token you got from the cURL request above.
 ```console
 curl --location --request GET 'http://localhost:8080/hello' \
 --header 'Content-Type: application/json' \
