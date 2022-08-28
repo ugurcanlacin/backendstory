@@ -12,7 +12,7 @@ import java.util.Date;
 @Service
 public class JwtUtil {
 
-    private static final int expireInMs = 60 * 1000;
+    private static final int expireInMs = 300 * 1000;
 
     private final static Key key = Keys.secretKeyFor(SignatureAlgorithm.HS256);
 
