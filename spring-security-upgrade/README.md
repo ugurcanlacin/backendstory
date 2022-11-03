@@ -1,6 +1,7 @@
-# Spring Security Authentication Scenario
+# Spring Security Configuration without WebSecurityConfigurerAdapter
 
-This project is used to explain how authentication architecture works in Spring Security.
+This project is used to explain how authentication architecture works in Spring Security. It is actually copy of `spring-security-authentication-scenario-5` project in the same repo. 
+However, Spring Security deprecated WebSecurityConfigurerAdapter since 5.7. This repo removes `WebSecurityConfigurerAdapter` and use up-to-date configuration.
 
 Please visit this blog post if you want to read.
 https://backendstory.com/spring-security-authentication-architecture-explained-in-depth/
@@ -11,7 +12,7 @@ https://youtu.be/ElY3rjtukig
 ### How to run:
 This project does not use any database, so you do not need to set up anything specific. Just run as it is.
 
-**Method 1:** Right-click on the `Scenario5.java` and then click `Run`.
+**Method 1:** Right-click on the `SpringSecurityUpgrade.java` and then click `Run`.
 
 **Method 2:** Run mvn `spring-boot:run` in your terminal.
 
